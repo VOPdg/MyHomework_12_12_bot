@@ -1,0 +1,10 @@
+
+// передать сообщение в чат через бота https://gist.github.com/dideler/85de4d64f66c1966788c1b2304b9caf1
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "-1001772973156", "text": "Hy do guyes", "disable_notification": true}' \
+     https://api.telegram.org/bot5313680068:AAFz-_lqSDo6WalMKPXjJT9jYae4f4bR7yk/sendMessage
+
+
+// комманда из консоли отправить в чат результат аллюра
+     java "-DconfigFile=notifications/telegram.json" -jar allure-notifications-4.1.jar
